@@ -1,6 +1,6 @@
-# wolfsay [![Build Status](https://travis-ci.org/yeoman/wolfsay.svg?branch=master)](https://travis-ci.org/yeoman/wolfsay)
 
-> Tell Yeoman what to say
+
+> Tell the wolf what to say
 
 Like [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.
 
@@ -19,19 +19,17 @@ $ npm install --save wolfsay
 ```js
 const wolfsay = require('wolfsay');
 
-console.log(wolfsay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
+console.log(wolfsay('Winter is coming!'));
 
 /*
-     _-----_     ╭──────────────────────────╮
-    |       |    │ Hello, and welcome to my │
-    |--(o)--|    │ fantastic generator full │
-   `---------´   │   of whimsy and bubble   │
-    ( _´U`_ )    │           gum!           │
-    /___A___\   /╰──────────────────────────╯
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
- */
+   __    ___                  
+   #_~`--'__ `=**-,            
+   `.`.     `#.,\\             ╭──────────────────────────╮
+     ,_\_\     ## ####\        │     Winter is coming!    │
+     `__.__    `#######\       ╰──────────────────────────╯
+            ~\ ,#########``~   
+            \######\'          
+
 ```
 
 *You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `wolfsay`.*
@@ -52,17 +50,16 @@ $ wolfsay --help
     echo <string> | wolfsay
 
   Example
-    wolfsay 'Sindre is a horse'
+    wolfsay 'Woof woof'
 
-     _-----_
-    |       |
-    |--(o)--|    ╭──────────────────────────╮
-   `---------´   │     Sindre is a horse    │
-    ( _´U`_ )    ╰──────────────────────────╯
-    /___A___\   /
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
+    __    ___                  
+   #_~`--'__ `=**-,            
+   `.`.     `#.,\\             ╭──────────────────────────╮
+     ,_\_\     ## ####\        │        Woof woof!        │
+     `__.__    `#######\       ╰──────────────────────────╯
+            ~\ ,#########``~   
+            \######\'                                   
+
 ```
 
 
