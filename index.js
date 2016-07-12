@@ -1,5 +1,4 @@
 'use strict';
-var chalk = require('chalk');
 var pad = require('pad-component');
 var wrap = require('wrap-ansi');
 var stringWidth = require('string-width');
@@ -13,15 +12,15 @@ var border = cliBoxes.round;
 var topOffset = 4;
 var leftOffset = 17;
 var defaultGreeting =
-  '\n     _-----_     ' +
-  '\n    |       |    ' +
-  '\n    |' + chalk.red('--(o)--') + '|    ' +
-  '\n   `---------´   ' +
-  '\n    ' + chalk.yellow('(') + ' _' + chalk.yellow('´U`') + '_ ' + chalk.yellow(')') + '    ' +
-  '\n    /___A___\\   /' +
-  '\n     ' + chalk.yellow('|  ~  |') + '     ' +
-  '\n   __' + chalk.yellow('\'.___.\'') + '__   ' +
-  '\n ´   ' + chalk.red('`  |') + '° ' + chalk.red('´ Y') + ' ` ';
+  '\n    __    ___                  ' +
+  '\n   #_~`--\'__ `=**-,            ' +
+  '\n   `.`.     `#.,\\\\             ' +
+  '\n     ,_\\_\\     ## ####\\        ' +
+  '\n     `__.__    `#######\\       ' +
+  '\n            ~\\ ,#########``~   ' +
+  '\n            \\######\\\'          ' +
+  '\n                               ' +
+  '\n                               ';
 
 // A total line with 45 characters consists of:
 // 28 chars for the top frame of the speech bubble → `╭──────────────────────────╮`
@@ -39,7 +38,7 @@ module.exports = function (message, options) {
    * What you're about to see may confuse you. And rightfully so. Here's an
    * explanation.
    *
-   * When yosay is given a string, we create a duplicate with the ansi styling
+   * When wolfsay is given a string, we create a duplicate with the ansi styling
    * sucked out. This way, the true length of the string is read by `pad` and
    * `wrap`, so they can correctly do their job without getting tripped up by
    * the "invisible" ansi. Along with the duplicated, non-ansi string, we store

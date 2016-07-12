@@ -1,4 +1,4 @@
-# yosay [![Build Status](https://travis-ci.org/yeoman/yosay.svg?branch=master)](https://travis-ci.org/yeoman/yosay)
+# wolfsay [![Build Status](https://travis-ci.org/yeoman/wolfsay.svg?branch=master)](https://travis-ci.org/yeoman/wolfsay)
 
 > Tell Yeoman what to say
 
@@ -10,16 +10,16 @@ Like [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.
 ## Install
 
 ```
-$ npm install --save yosay
+$ npm install --save wolfsay
 ```
 
 
 ## Usage
 
 ```js
-const yosay = require('yosay');
+const wolfsay = require('wolfsay');
 
-console.log(yosay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
+console.log(wolfsay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
 
 /*
      _-----_     ╭──────────────────────────╮
@@ -34,25 +34,25 @@ console.log(yosay('Hello, and welcome to my fantastic generator full of whimsy a
  */
 ```
 
-*You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `yosay`.*
+*You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `wolfsay`.*
 
 
 ## CLI
 
 ```
-$ npm install --global yosay
+$ npm install --global wolfsay
 ```
 
 ```
-$ yosay --help
+$ wolfsay --help
 
   Usage
-    yosay <string>
-    yosay <string> --maxLength 8
-    echo <string> | yosay
+    wolfsay <string>
+    wolfsay <string> --maxLength 8
+    echo <string> | wolfsay
 
   Example
-    yosay 'Sindre is a horse'
+    wolfsay 'Sindre is a horse'
 
      _-----_
     |       |
